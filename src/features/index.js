@@ -26,7 +26,7 @@ const homeScreen = () => {
                                     visible: true,
                                     drawBehind: false,
                                     title: {
-                                      text: 'Prev. Match',
+                                      text: 'Italian Serie A',
                                       fontSize: 14,
                                       color: '#9F9F9F',
                                       fontFamily: 'Poppins-Regular'
@@ -39,7 +39,9 @@ const homeScreen = () => {
                                   textColor: '#9F9F9F',
                                   selectedIconColor: '#4E4E4E',
                                   selectedTextColor: '#4E4E4E',
-                                  fontFamily: 'Poppins-Regular'
+                                  fontFamily: 'Poppins-Regular',
+                                  fontSize: 10, 
+                                  selectedFontSize: 12
                                 }
                               }
                             }
@@ -59,7 +61,7 @@ const homeScreen = () => {
                                     visible: true,
                                     drawBehind: false,
                                     title: {
-                                      text: 'Next Match',
+                                      text: 'Italian Serie A',
                                       fontSize: 14,
                                       color: '#9F9F9F',
                                       fontFamily: 'Poppins-Regular'
@@ -72,7 +74,9 @@ const homeScreen = () => {
                                   textColor: '#9F9F9F',
                                   selectedIconColor: '#4E4E4E',
                                   selectedTextColor: '#4E4E4E',
-                                  fontFamily: 'Poppins-Regular'
+                                  fontFamily: 'Poppins-Regular',
+                                  fontSize: 10, 
+                                  selectedFontSize: 12
                                 }
                               }
                             }
@@ -92,7 +96,7 @@ const homeScreen = () => {
                                     visible: true,
                                     drawBehind: false,
                                     title: {
-                                      text: 'Teams',
+                                      text: 'Italian Serie A',
                                       fontSize: 14,
                                       color: '#9F9F9F',
                                       fontFamily: 'Poppins-Regular'
@@ -105,7 +109,9 @@ const homeScreen = () => {
                                   textColor: '#9F9F9F',
                                   selectedIconColor: '#4E4E4E',
                                   selectedTextColor: '#4E4E4E',
-                                  fontFamily: 'Poppins-Regular'
+                                  fontFamily: 'Poppins-Regular',
+                                  fontSize: 10, 
+                                  selectedFontSize: 12
                                 }
                               }
                             }
