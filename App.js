@@ -1,18 +1,20 @@
-import React, {Component} from 'react';
-import {View, Text} from 'react-native';
 
-class App extends Component {
-  render() {
-    return (
-      <View style={{
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center'
-      }}>
-        <Text>React Native</Text>
-      </View>
-    )
-  }
-}
+import {Navigation} from 'react-native-navigation';
+import {registerScreen} from './src/utility/routers';
+import homeScreen from './src/features';
 
-export default App;
+registerScreen();
+Navigation.events().registerAppLaunchedListener(() => {
+  Navigation.setDefaultOptions({
+    statusBar: {
+      visible: true,
+      backgroundColor: '#ffffff',
+      style: 'dark'
+    },
+    layout: {
+      backgroundColor: 'white',
+      orientation: ['portrait']
+    }
+  });
+  homeScreen();
+});
