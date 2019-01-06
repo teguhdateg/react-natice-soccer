@@ -11,5 +11,5 @@ const store = ConfigureStore();
 export function registerScreen () {
     Navigation.registerComponentWithRedux('PrevMatchScreen', () => PrevMatchScreen, Provider, store);
     Navigation.registerComponentWithRedux('NextMatchScreen', () => NextMatchScreen, Provider, store);
-    Navigation.registerComponent('TeamsScreen', () => TeamsScreen);
+    Navigation.registerComponentWithRedux('TeamsScreen', () => TeamsScreen, Provider, store);
 }
