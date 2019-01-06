@@ -1,5 +1,5 @@
 import axios from 'axios';
-import {PREV_MATCH} from '../constants/types';
+import {PREV_MATCH} from '../constant/types';
 
 export const fetchPrevMatch = () => async (dispatch, getState) => {
     const {PrevMatch} = getState();

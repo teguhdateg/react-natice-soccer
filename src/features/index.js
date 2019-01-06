@@ -3,7 +3,7 @@ import Icon from 'react-native-vector-icons/Feather';
 
 const homeScreen = () => {
     Promise.all([
-        Icon.getImageSource('list', 16),
+        Icon.getImageSource('pie-chart', 16),
         Icon.getImageSource('trending-up', 16),
         Icon.getImageSource('users', 16)
     ]).then((sources) =>  {
@@ -26,17 +26,18 @@ const homeScreen = () => {
                                     visible: true,
                                     drawBehind: false,
                                     title: {
-                                      text: 'Premier League',
+                                      text: 'English Premier League',
                                       fontSize: 14,
-                                      color: '#9F9F9F',
+                                      color: '#4E4E4E',
                                       fontFamily: 'Poppins-Regular'
-                                    }
+                                    }, 
+                                    background: { color: '#ffffff' }
                                 },
                                 bottomTab: {
                                   text: 'Prev. Match',
                                   icon: sources[0],
-                                  iconColor: '#9F9F9F',
-                                  textColor: '#9F9F9F',
+                                  iconColor: '#4E4E4E',
+                                  textColor: '#4E4E4E',
                                   selectedIconColor: '#4E4E4E',
                                   selectedTextColor: '#4E4E4E',
                                   fontFamily: 'Poppins-Regular',
@@ -61,17 +62,18 @@ const homeScreen = () => {
                                     visible: true,
                                     drawBehind: false,
                                     title: {
-                                      text: 'Premier League',
+                                      text: 'English Premier League',
                                       fontSize: 14,
-                                      color: '#9F9F9F',
+                                      color: '#4E4E4E',
                                       fontFamily: 'Poppins-Regular'
-                                    }
+                                    },
+                                    background: { color: '#ffffff' }
                                 },
                                 bottomTab: {
                                   text: 'Next Match',
                                   icon: sources[1],
-                                  iconColor: '#9F9F9F',
-                                  textColor: '#9F9F9F',
+                                  iconColor: '#4E4E4E',
+                                  textColor: '#4E4E4E',
                                   selectedIconColor: '#4E4E4E',
                                   selectedTextColor: '#4E4E4E',
                                   fontFamily: 'Poppins-Regular',
@@ -96,17 +98,18 @@ const homeScreen = () => {
                                     visible: true,
                                     drawBehind: false,
                                     title: {
-                                      text: 'Premier League',
+                                      text: 'English Premier League',
                                       fontSize: 14,
-                                      color: '#9F9F9F',
+                                      color: '#4E4E4E',
                                       fontFamily: 'Poppins-Regular'
-                                    }
+                                    },
+                                    background: { color: '#ffffff' }
                                 },
                                 bottomTab: {
                                   text: 'Teams',
                                   icon: sources[2],
-                                  iconColor: '#9F9F9F',
-                                  textColor: '#9F9F9F',
+                                  iconColor: '#4E4E4E',
+                                  textColor: '#4E4E4E',
                                   selectedIconColor: '#4E4E4E',
                                   selectedTextColor: '#4E4E4E',
                                   fontFamily: 'Poppins-Regular',

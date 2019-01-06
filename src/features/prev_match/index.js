@@ -13,15 +13,14 @@ class PrevMatchScreen extends Component {
 
     render() {
         return (
-            <View style={{flex: 1,}}>
+            <View style={{flex: 1}}>
             {
-                this.props.PrevMatch.events.length == 0 ? (
-                    <View style={{flex:1,justifyContent: 'center', alignItems: 'center'}}>
+                this.props.PrevMatch.events.length === 0 ? (
+                    <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
                     <ActivityIndicator size="large" color="#0000ff" />
                     </View>
-                 ):(
-            
-                <FlatList
+                ) : (
+                    <FlatList
                     style={{flex: 1}}
                     showsVerticalScrollIndicator={false}
                     data={this.props.PrevMatch.events}
@@ -33,7 +32,7 @@ class PrevMatchScreen extends Component {
                         />
                     )}
                 />
-                 )
+                )
             }
             </View>
         )

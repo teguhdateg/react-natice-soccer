@@ -10,6 +10,6 @@ import TeamsScreen from '../features/teams';
 const store = ConfigureStore();
 export function registerScreen () {
     Navigation.registerComponentWithRedux('PrevMatchScreen', () => PrevMatchScreen, Provider, store);
-    Navigation.registerComponent('NextMatchScreen', () => NextMatchScreen);
+    Navigation.registerComponentWithRedux('NextMatchScreen', () => NextMatchScreen, Provider, store);
     Navigation.registerComponent('TeamsScreen', () => TeamsScreen);
 }
