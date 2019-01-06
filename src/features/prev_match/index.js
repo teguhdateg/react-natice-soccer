@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {View, FlatList} from 'react-native';
+import {View, FlatList, ActivityIndicator} from 'react-native';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 import {fetchPrevMatch} from './store/actions/prev_match_action';
@@ -13,7 +13,14 @@ class PrevMatchScreen extends Component {
 
     render() {
         return (
-            <View style={{flex: 1}}>
+            <View style={{flex: 1,}}>
+            {
+                this.props.PrevMatch.events.length == 0 ? (
+                    <View style={{flex:1,justifyContent: 'center', alignItems: 'center'}}>
+                    <ActivityIndicator size="large" color="#0000ff" />
+                    </View>
+                 ):(
+            
                 <FlatList
                     style={{flex: 1}}
                     showsVerticalScrollIndicator={false}
@@ -26,6 +33,8 @@ class PrevMatchScreen extends Component {
                         />
                     )}
                 />
+                 )
+            }
             </View>
         )
     }
