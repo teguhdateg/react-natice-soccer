@@ -1,0 +1,1 @@
+export const PREV_MATCH = 'PREV_MATCH';

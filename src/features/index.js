@@ -26,7 +26,7 @@ const homeScreen = () => {
                                     visible: true,
                                     drawBehind: false,
                                     title: {
-                                      text: 'Italian Serie A',
+                                      text: 'Premier League',
                                       fontSize: 14,
                                       color: '#9F9F9F',
                                       fontFamily: 'Poppins-Regular'
@@ -61,7 +61,7 @@ const homeScreen = () => {
                                     visible: true,
                                     drawBehind: false,
                                     title: {
-                                      text: 'Italian Serie A',
+                                      text: 'Premier League',
                                       fontSize: 14,
                                       color: '#9F9F9F',
                                       fontFamily: 'Poppins-Regular'
@@ -96,7 +96,7 @@ const homeScreen = () => {
                                     visible: true,
                                     drawBehind: false,
                                     title: {
-                                      text: 'Italian Serie A',
+                                      text: 'Premier League',
                                       fontSize: 14,
                                       color: '#9F9F9F',
                                       fontFamily: 'Poppins-Regular'
